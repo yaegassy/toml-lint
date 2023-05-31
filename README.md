@@ -72,9 +72,11 @@ input.toml:7:17 error: Expected newline or end of document after a statement
 input.toml:10:26 error: Invalid value
 ```
 
-## Editor Integrations
+## Editor Integration Demo
 
-> TODO
+**Vim/Neovim**:
+
+https://github.com/yaegassy/toml-lint/assets/188642/42c28f5e-e7b4-4f9c-9e92-77331ed32b73
 
 ## License
 
