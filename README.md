@@ -67,7 +67,7 @@ ignore_missing_imports = True # <- The correct form is "true" in lowercase.
 
 ```bash
 $ toml-lint input.toml
-input.toml:3:2 error: Invalid value
+input.toml:3:3 error: Invalid value
 input.toml:7:17 error: Expected newline or end of document after a statement
 input.toml:10:26 error: Invalid value
 ```
