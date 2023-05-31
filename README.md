@@ -53,7 +53,7 @@ Examples:
 ```
 [tool.ruff]
 select = [
-    I" # <- There is one missing double quote.
+  I" # <- There is one missing double quote.
 ]
 
 [tool.black]
@@ -71,6 +71,10 @@ input.toml:3:2 error: Invalid value
 input.toml:7:17 error: Expected newline or end of document after a statement
 input.toml:10:26 error: Invalid value
 ```
+
+## Editor Integrations
+
+> TODO
 
 ## License
 
