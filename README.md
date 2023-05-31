@@ -16,7 +16,7 @@ pipx install git+https://github.com/yaegassy/toml-lint
 
 ## Motivation
 
-The `loads` function in `tomllib/tomli` raises an exception and stops when it detects one error. It cannot detect multiple errors.
+Currently, there is no library or linter that detects multiple errors in toml files. For example, `tomllib/tomli`'s loads function raises an exception and stops when it detects one error.
 
 Therefore, I have created a linter that utilizes the "tree-sitter" parser to detect tree-error-nodes and executes the `loads` function from `tomllib/tomli` for each tree-error-node.
 
