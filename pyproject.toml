@@ -1,0 +1,44 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "toml-lint"
+version = "0.0.1"
+description = "A linter for TOML files that can detect multiple errors using by tree-sitter parser"
+authors = ["yaegassy <yosstools@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/yaegassy/toml-lint"
+repository = "https://github.com/yaegassy/toml-lint"
+keywords = ["toml", "lint", "linter","syntax", "checker", "tree-sitter"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Topic :: Software Development :: Code Generators",
+  "Topic :: Utilities"
+]
+include = ["README.md"]
+license = "MIT"
+packages = [{include = "toml_lint"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+tree-sitter-languages = "^1.5.0"
+tomli = "^2.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+ruff = "^0.0.270"
+mypy = "^1.3.0"
+black = "^23.3.0"
+
+[tool.poetry.scripts]
+toml-lint = 'toml_lint.cli:cli'
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.ruff]
+select = [
+	"I"
+]
