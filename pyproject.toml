@@ -14,7 +14,8 @@ keywords = ["toml", "lint", "linter","syntax", "checker", "tree-sitter"]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Environment :: Console",
-  "Topic :: Software Development :: Code Generators",
+  "Topic :: Software Development :: Quality Assurance",
+  "Topic :: Software Development :: Testing",
   "Topic :: Utilities"
 ]
 include = ["README.md"]
@@ -40,5 +41,5 @@ ignore_missing_imports = true
 
 [tool.ruff]
 select = [
-	"I"
+  "I"
 ]
