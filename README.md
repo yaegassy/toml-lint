@@ -4,7 +4,15 @@ A linter for TOML files that can detect multiple errors using by tree-sitter par
 
 ## Installation
 
-> TODO
+```
+pip install git+https://github.com/yaegassy/toml-lint
+
+# or
+
+pipx install git+https://github.com/yaegassy/toml-lint
+```
+
+> TODO: Publishing to PyPI
 
 ## Motivation
 
